@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="600.0" style="-fx-background-color: #CCCCCC;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StaffAddController">
+   <children>
+      <Button mnemonicParsing="false" text="Add Employee" textFill="GREY" />
+      <HBox minHeight="50.0" style="-fx-background-color: #003366;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Label text="Staff Information - All the fields have to be filled out!" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelbutton" layoutX="397.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleCancelStaff" text="Cancel" />
+      <Button fx:id="savebutton" layoutX="338.0" layoutY="507.0" mnemonicParsing="false" onAction="#handleSaveStaff" text="Save" />
+      <HBox prefHeight="175.0" prefWidth="275.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="374.0" prefWidth="182.0" spacing="11.0">
+               <children>
+                  <Label text="First Name:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Last Name:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Sex:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Title:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Phone:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Address:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Zip Code:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="City:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Province:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Email:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Staff ID:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Emergency Name:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Emergency Number:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Password:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Role">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="185.0" prefWidth="158.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="firstname" prefHeight="22.0" prefWidth="121.0" />
+                  <TextField fx:id="lastname" prefHeight="22.0" prefWidth="121.0" />
+                  <VBox spacing="3.0">
+                     <children>
+                        <ChoiceBox fx:id="sexbox" prefHeight="25.0" prefWidth="76.0" />
+                        <ChoiceBox fx:id="titlebox" prefHeight="25.0" prefWidth="76.0" />
+                     </children>
+                  </VBox>
+                  <TextField fx:id="phone" prefHeight="22.0" prefWidth="121.0" />
+                  <TextField fx:id="address" />
+                  <TextField fx:id="zipcode" />
+                  <TextField fx:id="city" />
+                  <ChoiceBox fx:id="provincebox" prefWidth="150.0" />
+                  <TextField fx:id="email" />
+                  <TextField fx:id="staffid" />
+                  <TextField fx:id="emergencyname" />
+                  <TextField fx:id="emergencynumber" />
+                  <PasswordField fx:id="password" />
+                  <ChoiceBox fx:id="rolebox" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

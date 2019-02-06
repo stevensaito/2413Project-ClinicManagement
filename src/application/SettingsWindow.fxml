@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #CCCCCC;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsController">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" minHeight="50.0" style="-fx-background-color: #003366;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button fx:id="buttonHome" mnemonicParsing="false" onAction="#handleHome" text="Home" />
+            <Button fx:id="buttonPatients" mnemonicParsing="false" onAction="#handlePatients" text="Patients" />
+            <Button fx:id="buttonStaff" mnemonicParsing="false" onAction="#handleStaff" text="Staff" />
+            <Button fx:id="buttonSettings" mnemonicParsing="false" onAction="#handleSettings" text="Settings">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="buttonAppointment" mnemonicParsing="false" onAction="#handleAppointment" text="Appointment" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" spacing="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="username" text="Username" textFill="WHITE" />
+            <Button fx:id="buttonLogout" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+         </children>
+      </HBox>
+      <Label layoutX="25.0" layoutY="66.0" prefHeight="17.0" prefWidth="98.0" text="Clinic's Hours" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <HBox layoutX="22.0" layoutY="114.0" spacing="40.0" AnchorPane.topAnchor="130.0">
+         <children>
+            <VBox id="days" prefHeight="250.0" prefWidth="104.0" spacing="23.0">
+               <children>
+                  <Label text="Monday" />
+                  <Label text="Tuesday" />
+                  <Label text="Wednesday" />
+                  <Label text="Thursday" />
+                  <Label text="Friday" />
+                  <Label text="Saturday" />
+                  <Label text="Sunday" />
+               </children>
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox spacing="23.0">
+                     <children>
+                        <Label fx:id="monstart" text="8:30 am">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tuestart" text="8:30 am">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wedstart" text="8:30 am">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="thursstart" text="8:30 am">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fristart" text="8:30 am">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="satstart" text="9:00 am ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sunstart" text="9:00 am ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox spacing="23.0">
+                     <children>
+                        <Label text="-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="-">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox spacing="23.0">
+                     <children>
+                        <Label fx:id="monend" text="7:00 pm">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tueend" text="7:00 pm">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wedend" text="6:00 pm">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="thursend" text="7:00 pm">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="friend" text="5:00 pm">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="satend" text="3:00 pm">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sunend" text="3:00 pm">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox spacing="23.0">
+                     <children>
+                        <Label fx:id="drmon" text="mon">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="drtue" text="tue">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="drwed" text="wed">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="drthurs" text="Thu">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="drfri" text="Fri">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="drsat" text="Sat">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="drsun" text="sun">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Label layoutX="198.0" layoutY="100.0" text="Hours" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="347.0" layoutY="100.0" text="Available Doctors" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="590.0" layoutY="99.0" prefHeight="19.0" prefWidth="118.0" text="Number of rooms:" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="99.0" />
+      <VBox layoutX="642.0" layoutY="130.0" spacing="23.0">
+         <children>
+            <Label fx:id="monroom" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="tueroom" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="wedroom" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="thursroom" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="friroom" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="satroom" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="sunroom" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="editbutton" layoutX="609.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleEditSettings" text="Edit" />
+   </children>
+</AnchorPane>

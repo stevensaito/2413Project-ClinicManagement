@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="704.0" style="-fx-background-color: #CCCCCC;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsEditController">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" minHeight="50.0" style="-fx-background-color: #003366;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Label layoutX="25.0" layoutY="66.0" prefHeight="19.0" prefWidth="190.0" text="Operating Hours" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <HBox layoutX="22.0" layoutY="114.0" spacing="30.0" AnchorPane.topAnchor="130.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <VBox id="days" prefHeight="250.0" prefWidth="104.0" spacing="17.0">
+                     <children>
+                        <Label text="Monday" />
+                        <Label text="Tuesday" />
+                        <Label text="Wednesday" />
+                        <Label text="Thursday" />
+                        <Label text="Friday" />
+                        <Label text="Saturday" />
+                        <Label text="Sunday" />
+                     </children>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="250.0" prefWidth="80.0" spacing="7.5">
+                     <children>
+                        <ComboBox fx:id="monstart" prefHeight="25.0" prefWidth="91.0" />
+                        <ComboBox fx:id="tuestart" prefHeight="25.0" prefWidth="100.0" />
+                        <ComboBox fx:id="wedstart" prefHeight="25.0" prefWidth="83.0" />
+                        <ComboBox fx:id="thursstart" prefHeight="25.0" prefWidth="84.0" />
+                        <ComboBox fx:id="fristart" prefHeight="26.0" prefWidth="95.0" />
+                        <ComboBox fx:id="satstart" prefHeight="25.0" prefWidth="85.0" />
+                        <ComboBox fx:id="sunstart" prefHeight="25.0" prefWidth="80.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="250.0" prefWidth="80.0" spacing="7.5">
+                     <children>
+                        <ComboBox fx:id="monend" prefHeight="25.0" prefWidth="84.0" />
+                        <ComboBox fx:id="tueend" prefHeight="25.0" prefWidth="78.0" />
+                        <ComboBox fx:id="wedend" prefHeight="25.0" prefWidth="83.0" />
+                        <ComboBox fx:id="thursend" prefHeight="25.0" prefWidth="93.0" />
+                        <ComboBox fx:id="friend" prefHeight="25.0" prefWidth="84.0" />
+                        <ComboBox fx:id="satend" prefHeight="25.0" prefWidth="80.0" />
+                        <ComboBox fx:id="sunend" prefHeight="25.0" prefWidth="93.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="250.0" prefWidth="65.0" spacing="7.5">
+                     <children>
+                        <ComboBox fx:id="midmon" prefHeight="25.0" prefWidth="73.0" />
+                        <ComboBox fx:id="midtue" prefHeight="25.0" prefWidth="71.0" />
+                        <ComboBox fx:id="midwed" prefHeight="25.0" prefWidth="63.0" />
+                        <ComboBox fx:id="midthurs" prefWidth="150.0" />
+                        <ComboBox fx:id="midfri" prefWidth="150.0" />
+                        <ComboBox fx:id="midsat" prefWidth="150.0" />
+                        <ComboBox fx:id="midsun" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="250.0" prefWidth="65.0" spacing="7.5">
+                     <children>
+                        <ComboBox fx:id="samon" prefHeight="25.0" prefWidth="73.0" />
+                        <ComboBox fx:id="satue" prefHeight="25.0" prefWidth="71.0" />
+                        <ComboBox fx:id="sawed" prefHeight="25.0" prefWidth="63.0" />
+                        <ComboBox fx:id="sathurs" prefWidth="150.0" />
+                        <ComboBox fx:id="safri" prefWidth="150.0" />
+                        <ComboBox fx:id="sasat" prefWidth="150.0" />
+                        <ComboBox fx:id="sasun" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="7.5">
+                     <children>
+                        <ComboBox fx:id="scmon" prefHeight="17.0" prefWidth="67.0" />
+                        <ComboBox fx:id="sctue" prefHeight="17.0" prefWidth="67.0" />
+                        <ComboBox fx:id="scwed" prefHeight="17.0" prefWidth="67.0" />
+                        <ComboBox fx:id="scthurs" prefHeight="17.0" prefWidth="67.0" />
+                        <ComboBox fx:id="scfri" prefHeight="17.0" prefWidth="67.0" />
+                        <ComboBox fx:id="scsat" prefHeight="17.0" prefWidth="67.0" />
+                        <ComboBox fx:id="scsun" prefHeight="17.0" prefWidth="67.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="250.0" prefWidth="65.0" spacing="7.5">
+                     <children>
+                        <ComboBox fx:id="umon" prefHeight="25.0" prefWidth="73.0" />
+                        <ComboBox fx:id="utue" prefHeight="25.0" prefWidth="71.0" />
+                        <ComboBox fx:id="uwed" prefHeight="25.0" prefWidth="63.0" />
+                        <ComboBox fx:id="uthurs" prefWidth="150.0" />
+                        <ComboBox fx:id="ufri" prefWidth="150.0" />
+                        <ComboBox fx:id="usat" prefWidth="150.0" />
+                        <ComboBox fx:id="usun" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="250.0" prefWidth="65.0" spacing="7.5">
+                     <children>
+                        <ComboBox fx:id="monrooms" prefHeight="25.0" prefWidth="73.0" />
+                        <ComboBox fx:id="tuerooms" prefHeight="25.0" prefWidth="71.0" />
+                        <ComboBox fx:id="wedrooms" prefHeight="25.0" prefWidth="63.0" />
+                        <ComboBox fx:id="thursrooms" prefWidth="150.0" />
+                        <ComboBox fx:id="frirooms" prefWidth="150.0" />
+                        <ComboBox fx:id="satrooms" prefWidth="150.0" />
+                        <ComboBox fx:id="sunrooms" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Label layoutX="137.0" layoutY="100.0" text="Open" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="316.0" layoutY="100.0" text="Middel" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="616.0" layoutY="99.0" prefHeight="19.0" prefWidth="67.0" text="# of rooms:" AnchorPane.leftAnchor="616.0" AnchorPane.topAnchor="99.0" />
+      <Button fx:id="savebutton" layoutX="416.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleUpdateSettings" text="Save" />
+      <Button fx:id="cancelbutton" layoutX="470.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleCancelSettings" text="Cancel" />
+      <Label layoutX="389.0" layoutY="100.0" text="Saito" />
+      <Label layoutX="470.0" layoutY="100.0" text="Scheven" />
+      <Label layoutX="543.0" layoutY="100.0" text="Umami" />
+      <Label layoutX="229.0" layoutY="100.0" text="Close" />
+   </children>
+</AnchorPane>
